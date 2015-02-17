@@ -1,0 +1,1 @@
+x <- df %>% filter(SQ__FT != 0) %>% mutate(PRICE_PER_SQFT = PRICE / SQ__FT) %>% select(CITY, PRICE_PER_SQFT) %>% tbl_df
